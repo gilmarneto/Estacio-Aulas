@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Form</title>
+    <link rel="stylesheet" href="css/base_form.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="txt_nome">
+                    <label for="data">Data Nasc.:</label>
+                    <input type="date" name="data" id="txt_data">
+                </div>
+                <div>
+                    <label for="nome_mae">Nome da Mãe:</label>
+                    <input type="text" name="nome_mae" id="txt_nome_mae">
+                    <label for="nome_pai">Nome do Pai:</label>
+                    <input type="text" name="nome_pai" id="txt_nome_pai">
+                </div>
+                <div>
+                    <label for="">Celular:</label>
+                    <input type="text" name="nome" id="txt_nome">
+                    <label for="">E-Mail:</label>
+                    <input type="text" name="nome" id="txt_nome">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Escolares</legend>
+                <div>
+                    <label for="sel_curso">Selecionar Curso:</label>
+                    <select name="sel_curso" id="sel_curso">
+                        <option value=""></option>
+                        <option value="Lógica de Programação">Lógica de Programação</option>
+                        <option value="html">HTML5</option>
+                        <option value="Lógica de Programação">Lógica de Programação</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="btn_enviar" id="btn_enviar" value="Enviar">
+                <input type="reset" name="btn_limpar" id="btn_limpar" value="Limpar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

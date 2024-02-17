@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_01</title>
+    <link rel="stylesheet" href="css/form_01.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset class="field">
+                <legend>Dados Pessoais</legend>
+                <div class="field-row">
+                    <div id="row01-col01">
+                        <label for="txt-nome">Nome:</label>
+                        <input type="text" name="txt-nome" id="txt-nome" class="field_txt" required>
+                    </div>
+                    <div id="row01-col02">
+                        <label for="txt-data">Data Nasc.:</label>
+                        <input type="date" name="txt-data" id="txt-data" class="field_txt" required>
+                    </div>
+                </div>
+                <div class="field-row">
+                    <div id="row02-col01">
+                        <label for="txt-nome-mae">Nome da Mãe:</label>
+                        <input type="text" name="txt-nome-mae" id="txt-nome-mae" class="field_txt" required>
+                    </div>
+                    <div id="row02-col02">
+                        <label for="txt-nome-pai">Nome do Pai:</label>
+                        <input type="text" name="txt-nome-pai" id="txt-nome-pai" class="field_txt">
+                    </div>
+                </div>
+                <div class="field-row">
+                    <div id="row03-col01">
+                        <label for="txt-celular">Celular:</label>
+                        <input type="tel" name="txt-celular" id="txt-celular" class="field_txt" required>
+                    </div>
+                    <div id="row03-col02">
+                        <label for="txt-email">E-Mail:</label>
+                        <input type="email" name="txt-email" id="txt-email" class="field_txt">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Dados Escolares</legend>
+                <div class="field-row">
+                    <div id="field-col">
+                        <div class="col">
+                            <label for="sel_curso">Curso:</label>
+                            <select name="sel_curso" id="sel_curso">
+                                <option value="" disabled selected>Selecione o curso...</option>
+                                <option value="logica">Lógica de Programação</option>
+                                <option value="html">HTML5</option>
+                                <option value="css">CSS3</option>
+                                <option value="js">JavaScript</option>
+                                <option value="node">NodeJS</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="titulo_coluna">Turma:</label>
+                            <label for="r_manha" class="radio"><input type="radio" name="rad_turma" id="r_manha" value="manha">Manhã</label>
+                            <label for="r_tarde" class="radio"><input type="radio" name="rad_turma" id="r_tarde" value="tarde">Tarde</label>
+                            <label for="r_noite" class="radio"><input type="radio" name="rad_turma" id="r_noite" value="noite">Noite</label>
+                        </div>
+                        <div class="col">
+                            <label>Extracurriculares:</label>
+                            <label for="chb_ingles" class="chb"><input type="checkbox" id="chb_ingles" value="ingles">Inglês</label>
+                            <label for="chb_matematica" class="chb"><input type="checkbox" id="chb_matematica" value="ingles">Matemática</label>
+                            <label for="chb_uxui" class="chb"><input type="checkbox" id="chb_uxui" value="ui-ux">UI/UX</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset  class="field">
+                <div class="field-row">
+                    <div id="btn_submit">
+                        <input type="submit" id="btn_enviar" value="Enviar">
+                    </div>
+                    <div id="btn_reset">
+                        <input type="reset" id="btn_limpar" value="Limpar">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
