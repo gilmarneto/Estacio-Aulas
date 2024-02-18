@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="general_calc">
+            <div id="row_1">
+                <input type="numero" id="txt_valor1" class="txt_valor" placeholder="valor_1">
+                <select name="sel_operador" id="sel_operador" class="sel_operador" required>
+                    <option value="" disabled selected>+ - x &divide;</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">&divide;</option>
+                </select>
+                <input type="numero" id="txt_valor2" class="txt_valor" placeholder="valor_2">
+            </div>
+            <div id="row_2">
+                <span id="txt_res">resultado...</span>
+            </div>
+            <div id="row_3">
+                <input type="button" id="btn_calcular" class="btn" value="Calcular...">
+                <input type="button" id="btn_limpar" class="btn" value="Limpar">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>calculadora versão: 1.0</h4>
+    </footer>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
